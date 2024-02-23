@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Survey Page</title>
+</head>
+<body>
+    <form method="post" action="mailto:bluwav@isp.com">
+
+    <header>
+	    <img src="bluwavlogo.jpg" width="410" height="139" alt="Blu Wav logo" />
+    </header>
+
+    <p>Austin De La Cruz would like to know what types of music you enjoy so we can provide that music via streaming and download. Please complete our survey.</p>
+
+    <p>First Name: <input name="firstname" type="text" size="25" /> &nbsp; &nbsp;
+    Last Name: <input name="lastname" type="text" size="25" /> &nbsp; &nbsp;
+    Email Address: <input name="email" type="text" size="25" /></p>
+
+    <br />Select the type(s) of music that you prefer:
+    <br /><input name="musictype" type="checkbox" value="country" />Country &nbsp;
+    <input name="musictype" type="checkbox" value="folk" />Folk &nbsp;
+    <input name="musictype" type="checkbox" value="jazz" />Jazz &nbsp;
+    <input name="musictype" type="checkbox" value="latin" />Latin &nbsp;
+    <input name="musictype" type="checkbox" value="pop" />Pop &nbsp;
+    <input name="musictype" type="checkbox" value="rap" />Rap &nbsp;
+    <input name="musictype" type="checkbox" value="rock" />Latin;
+
+    <p>Where do you make most of your music purchases:
+    <br /><input name="purchases" type="radio" value="none" />Don't buy music &nbsp;
+    <input name="purchases" type="radio" value="itunes" />iTunes &nbsp;
+    <input name="purchases" type="radio" value="amazon" />Amazon &nbsp;
+    <input name="purchases" type="radio" value="online" />Other online store &nbsp;
+    <input name="purchases" type="radio" value="retail" />Retail store &nbsp;
+    </p>
+    
+    <p>Favorite Internet radio station:
+        <select name="station">
+            <option>Spotify</option>
+            <option>Google</option>
+            <option>Live 365</option>
+            <option>Pandora</option>
+            <option>Slacker</option>
+        </select>
+        
+        &nbsp; &nbsp;Name station not listed:
+            <input name="additstation" type="text" size="30" maxlength="30" />
+    </p>
+
+    <p>What else can you tell us about your music preferences?</p>
+    <textarea name="other" rows="3" cols="100"></textarea>
+        
+    <p><input type="submit" value="Submit" />
+    <input type="reset" value="Reset" /></p>
+    <br />Thank you for completing our survey.</p>
+
+    </form>
+</body>
+</html>
